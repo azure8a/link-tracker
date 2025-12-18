@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Tracker</title>
+</head>
+<body>
+    <h1>🎯 Link Tracker</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Paste your link here" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if short_url %}
+    <p>Your short link: <a href="{{ short_url }}">{{ short_url }}</a></p>
+    {% endif %}
+</body>
+</html>
